@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 
-client = OpenAI(api_key="sk-HcSk5O-BU0b_pbq-BHvcrVqRhKcBK-BpLr2Std9VdET3BlbkFJ3en0RRQ8aPUMJmPqVl0geC1Mvye3KSnEhpQ1To6aQA")
+client = OpenAI(api_key)
 
 
 
