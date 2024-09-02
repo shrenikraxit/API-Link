@@ -1,6 +1,9 @@
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
-
+load_dotenv()
+api_key = os.getenv("API_KEY")
 client = OpenAI(api_key)
 
 
@@ -15,7 +18,7 @@ response = client.chat.completions.create(
         {
           "type": "image_url",
           "image_url": {
-            "url": "https://drive.google.com/file/d/1zobAk-OkN_BPwUs-rEoHVvtsgtSeLeyn/view?usp=drive_link",
+            "url": "https://media.istockphoto.com/id/93214254/photo/vervet-monkey-chlorocebus-pygerythrus.jpg?s=612x612&w=0&k=20&c=p0Pxilywbzh0Jcsobjv3zCUaT5IQ93eTOtre8He4W9A=",
           },
         },
       ],
