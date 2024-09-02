@@ -1,7 +1,7 @@
-
+from flask import Flask
 import os
 
-
+app = Flask(__name__)
 api_key = os.getenv("API_KEY")
 print(api_key)
 
