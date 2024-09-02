@@ -1,5 +1,4 @@
-gunicorn
+gunicorn==20.1.0
 openai
 python-dotenv
-flask
-python-flask
+Flask==2.3.2
