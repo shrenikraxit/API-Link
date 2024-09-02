@@ -1,11 +1,16 @@
 from openai import OpenAI
 import os
 
+
+
+
 api_key = os.getenv("API_KEY")
-client = OpenAI(api_key)
+print(api_key)
+
+#client = OpenAI(api_key)
 
 
-
+'''
 response = client.chat.completions.create(
   model="gpt-4o-mini",
   messages=[
@@ -26,5 +31,5 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0])
-
+'''
 
